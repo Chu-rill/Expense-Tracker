@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Expense Tracker</h1>
+        <h5>Add A New Item:</h5>
+      </div>
+      <span class="des"
+        >Name:<input class="name" type="text" placeholder="Description"
+      /></span>
+      <div class="other">
+        <span class="dat">Date:<input type="date" class="date" /></span>
+        <span class="amo">Amount:<input type="text" class="amount" /></span>
+      </div>
+      <div class="button">
+        <button class="btn1"><p>Add Expenses</p></button>
+      </div>
+    </div>
+    <div class="main">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="expenseTableBody">
+          <!-- Rows will be added dynamically here -->
+        </tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Expense Tracker</h1>
+        <h5>Add A New Item:</h5>
+      </div>
+      <span class="des"
+        >Name:<input class="name" type="text" placeholder="Description"
+      /></span>
+      <div class="other">
+        <span class="dat">Date:<input type="date" class="date" /></span>
+        <span class="amo">Amount:<input type="text" class="amount" /></span>
+      </div>
+      <div class="button">
+        <button class="btn1"><p>Add Expenses</p></button>
+      </div>
+    </div>
+    <div class="main">
+      <table>
+        <tr id="tr1">
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+        </tr>
+        <tr class="tr"></tr>
+      </table>
+    </div>
+    <script src="app.js"></script>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
+
+const descriptionInput = document.querySelector(".name"); const amountInput =
+document.querySelector(".amount"); const dateInput =
+document.querySelector(".date"); const btn = document.querySelector(".btn1");
+const tr = document.querySelector(".tr"); btn.addEventListener("click", () => {
+// Create new table data (td) elements const descriptionValue =
+document.createElement("td"); descriptionValue.innerText =
+descriptionInput.value; const dateValue = document.createElement("td");
+dateValue.innerText = dateInput.value; const amountValue =
+document.createElement("td"); amountValue.innerText = `#${amountInput.value}`;
+// Append the new td elements to the table row (tr)
+tr.appendChild(descriptionValue); tr.appendChild(dateValue);
+tr.appendChild(amountValue); // Clear the input fields descriptionInput.value =
+""; dateInput.value = ""; amountInput.value = ""; });
+ body { display: flex;
+flex-direction: column; justify-content: center; align-items: center; } .title {
+text-align: center; } 
+.container { width: 900px; /* height: 400px; */
+margin-bottom: 50px; } 
+h1 { font-size: 40px; }
+ h5 { color: green; font-size:
+20px; }
+ .name { width: 85%; }
+  .des, .dat { padding-left: 50px; font-weight: 900;
+} 
+.date { width: 40%; }
+ .amount { width: 39%; }
+  .other { margin-top: 10px; }
+.amo { font-weight: 900; }
+ .button { display: flex; justify-content: center;
+margin-top: 10px; } 
+button { background-color: green; color: white; font-weight:
+900; font-size: 14px; border: none; cursor: pointer; }
+ table { background-color:
+black; width: 800px; overflow: hidden; }
+ #tr1 { text-align: left;
+background-color: white; }
+ th { width: 100px; 
+ } td { background-color: white;
+color: black; font-weight: 900; }

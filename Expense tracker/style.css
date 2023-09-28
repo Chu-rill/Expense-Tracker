@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the container */
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the title */
+.title {
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #333;
+}
+
+/* Style the input fields and labels */
+.des {
+  display: flex;
+  margin: 10px 0;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.name {
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px;
+}
+.date {
+  width: 40%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.amount {
+  width: 39%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+label {
+  font-weight: bold;
+}
+
+/* Style the button */
+.button {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #333;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style the table header */
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style alternating rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style the table data cells in the rows */
+td {
+  border-right: 1px solid #333;
+}
+
+/* Remove right border from the last cell in each row */
+tr td:last-child {
+  border-right: none;
+}
